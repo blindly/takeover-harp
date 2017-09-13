@@ -1,6 +1,96 @@
 div.row
   div.tabs
-    include tabs/tab-1
-    include tabs/tab-2
-    include tabs/tab-3
-    include tabs/tab-4
+    
+    div.tab
+      input(type="radio" id="tab-1" name="tab-group-1" checked)
+      label(for="tab-1") Memo
+      div.content
+        h2 Memo
+        p Welcome. You are the new CTO. You're here to turn the company around. We want you to make the company profitable.
+        p Work as much as you can. Once you start buying companies, they will begin generating profits. Our goal is total world takeover.
+        p If you need a break, you can leave and we'll save your work and you can continue when you return.
+        p If you fail, the company will fail. We are counting on you.
+        p -- Management
+        br
+        br
+        h3
+          Credits: 
+          span#coins 0
+        h4 
+          Revenue: 
+          span#revenue 0
+        button(onClick="coinClick(0.5)") Work
+
+    div.tab 
+      input(type="radio" id="tab-2" name="tab-group-1")
+      label(for="tab-2") Reports
+
+    div.tab 
+      input(type="radio" id="tab-3" name="tab-group-1")
+      label(for="tab-3") Eastern Hemisphere
+      div.content
+        div.one-third.column(style="margin-top: 10%")
+          h2 India
+          h5 Companies
+            Cost: 
+            span#toIndiaCost 10
+            br
+            Revenue:
+            span#toIndiaRevenue 0
+          button(onClick="expandIndia()") Take Over
+        div.one-third.column(style="margin-top: 10%")
+          h2 Africa
+          h5 Companies
+            Cost: 
+            span#toAfricaCost 100
+            br
+            Revenue:
+            span#toAfricaRevenue 0
+          button(onClick="expandAfrica()") Take Over
+        div.one-third.column(style="margin-top: 10%")
+          h2 Asia
+          h5 Companies
+            Cost: 
+            span#toAsiaCost 1000
+            br
+            Revenue:
+            span#toAsiaRevenue 0
+          button(onClick="expandAfrica()") Take Over
+          
+    div.tab 
+      input(type="radio" id="tab-4" name="tab-group-1")
+      label(for="tab-4") Western Hemisphere
+
+      div.content
+        div.one-third.column(style="margin-top: 10%")
+          h2 Europe
+          h5 Companies
+            Cost: 
+            span#toEuropeCost 10
+            br
+            Revenue:
+            span#toEuropeRevenue 0
+
+          button(onClick="expandEurope()") Take Over
+
+        div.one-third.column(style="margin-top: 10%")
+          h2 Americas
+          h5 Companies
+            Cost: 
+            span#toAmericasCost 100
+            br
+            Revenue:
+            span#toAmericasRevenue 0
+
+          button(onClick="expandAmericas()") Take Over
+
+        div.one-third.column(style="margin-top: 10%")
+          h2 Atlantis
+          h5 Companies
+            Cost: 
+            span#toAtlantisCost 1000
+            br
+            Revenue:
+            span#toAtlantisRevenue 0
+
+          button(onClick="expandAtlantis()") Take Over
