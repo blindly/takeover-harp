@@ -1,0 +1,23 @@
+script(src="https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.js")
+script(type="application/javascript")
+    accounting.settings = {
+        currency: {
+            symbol: "&euro;", // default currency symbol is '$'
+            format: "%s%v", // controls output: %s = symbol, %v = value/number (can be object: see below)
+            decimal: ".", // decimal point separator
+            thousand: ",", // thousands separator
+            precision: 2 // decimal places
+        },
+        number: {
+            precision: 0, // default precision on numbers is 0
+            thousand: ",",
+            decimal: "."
+        }
+    }
+
+<!-- Plotly.js -->
+script(src="https://cdn.plot.ly/plotly-latest.min.js")
+<!-- Numeric JS -->
+script(src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js")
+<!-- Main -->
+script(src="js/main.js")

@@ -1,0 +1,37 @@
+div.tab 
+  input(type="radio" id="tab-4" name="tab-group-1")
+  label(for="tab-4") Western Hemisphere
+  
+  div.content
+    div.one-third.column(style="margin-top: 10%")
+      h2 Europe
+      h5 Companies
+        Cost: 
+        span#toEuropeCost 10
+        br
+        Revenue:
+        span#toEuropeRevenue 0
+      
+      button(onClick="expandEurope()") Take Over
+      
+    div.one-third.column(style="margin-top: 10%")
+      h2 Americas
+      h5 Companies
+        Cost: 
+        span#toAmericasCost 100
+        br
+        Revenue:
+        span#toAmericasRevenue 0
+      
+      button(onClick="expandAmericas()") Take Over
+      
+    div.one-third.column(style="margin-top: 10%")
+      h2 Atlantis
+      h5 Companies
+        Cost: 
+        span#toAtlantisCost 1000
+        br
+        Revenue:
+        span#toAtlantisRevenue 0
+      
+      button(onClick="expandAtlantis()") Take Over

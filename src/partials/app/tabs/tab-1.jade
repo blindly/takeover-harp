@@ -1,0 +1,24 @@
+div.tab
+  input(type="radio" id="tab-1" name="tab-group-1" checked)
+  label(for="tab-1") Memo
+  
+  div.content
+    h2 Memo
+    p Welcome. You are the new CTO. You're here to turn the company around. We want you to make the company profitable.
+    p Work as much as you can. Once you start buying companies, they will begin generating profits. Our goal is total world takeover.
+    p If you need a break, you can leave and we'll save your work and you can continue when you return.
+    p If you fail, the company will fail. We are counting on you.
+    p -- Management
+
+    br
+    br
+    
+    h3
+      Credits: 
+      span#coins 0
+      
+    h4 
+      Revenue: 
+      span#revenue 0
+      
+    button(onClick="coinClick(0.5)") Work
