@@ -25,12 +25,12 @@ var toChinaCost = 2500;
 //*****  Exponential *****//
 
 // Start of ASIA
-var toTurkeyPower = 5;
-var toIndonesiaPower = 10;
-var toRussiaPower = 15;
-var toJapanPower = 20;
-var toIndiaPower = 25;
-var toChinaPower = 30;
+var toTurkeyPower = 10;
+var toIndonesiaPower = 50;
+var toRussiaPower = 100;
+var toJapanPower = 150;
+var toIndiaPower = 200;
+var toChinaPower = 250;
 //
 
 // Value of a click
