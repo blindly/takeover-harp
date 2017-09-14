@@ -1,0 +1,31 @@
+div.tab 
+  input(type="radio" id="tab-3" name="tab-group-1")
+  label(for="tab-3") Eastern Hemisphere
+  div.content
+    div.one-third.column(style="margin-top: 10%")
+      h2 India
+      h5 Companies: 
+        span#toIndia 0
+      h5 Cost: 
+        span#toIndiaCost 10
+      h5 Revenue:
+        span#toIndiaRevenue 0
+      button(onClick="expandIndia()") Take Over
+    div.one-third.column(style="margin-top: 10%")
+      h2 Africa
+      h5 Companies: 
+        span#toAfrica 0
+      h5 Cost: 
+        span#toAfricaCost 100
+      h5 Revenue:
+        span#toAfricaRevenue 0
+      button(onClick="expandAfrica()") Take Over
+    div.one-third.column(style="margin-top: 10%")
+      h2 Asia
+      h5 Companies: 
+        span#toAsia 0
+      h5 Cost: 
+        span#toAsiaCost 1000
+      h5 Revenue:
+        span#toAsiaRevenue 0
+      button(onClick="expandAfrica()") Take Over
