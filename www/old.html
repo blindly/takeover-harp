@@ -1,0 +1,186 @@
+<html>
+
+<head>
+    <title>Corporate Take Over</title>
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href="https://fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+    <!-- CSS
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/skeleton.css">
+    <link rel="stylesheet" href="css/interface.css">
+    <link rel="stylesheet" href="css/tabs.css">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <section id="banner">
+                <h1>Corporate Take Over</h1>
+            </section>
+        </div>
+
+        <div class="row">
+
+
+
+            <div class="tabs">
+
+                <div class="tab">
+                    <input type="radio" id="tab-1" name="tab-group-1" checked>
+                    <label for="tab-1">Memo</label>
+
+                    <div class="content">
+                        <h2>Memo </h2>
+                        <p>Welcome. You are the new CTO. You're here to turn the company around. We want you to make the company profitable.</p>
+
+                        <p>Work as much as you can. Once you start buying companies, they will begin generating profits. Our goal is total world takeover.</p>
+
+                        <p>If you need a break, you can leave and we'll save your work and you can continue when you return.</p>
+
+                        <p>If you fail, the company will fail. We are counting on you. </p>
+                        <p>-- Management</p>
+
+                        <br><br>
+                        <h3>
+                            Credits: <span id="coins">0</span>M
+                        </h3>
+
+                        <!-- <h4>
+                            Revenue: <span id="revenue">0</span>M
+                        </h4> -->
+
+                        <button onClick="coinClick(0.5)">Work</button>
+                    </div>
+                </div>
+
+
+                <div class="tab">
+                    <input type="radio" id="tab-2" name="tab-group-1">
+                    <label for="tab-2">Reports</label>
+
+                    <div class="content">
+                        <div id="chart" class="one-half column" style="margin-top: 5%"></div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input type="radio" id="tab-3" name="tab-group-1">
+                    <label for="tab-3">Eastern Hemisphere</label>
+
+                    <div class="content">
+                        <div class="one-third column" style="margin-top: 10%">
+                            <h2>India</h2>
+                            <h5>
+                                Companies: <span id="toIndia">0</span>
+                                <br /> Cost: <span id="toIndiaCost">10</span>M
+                                <br /> Revenue: <span id="toIndiaRevenue">0</span>M
+                            </h5>
+
+                            <button onClick="expandIndia()">Take Over</button>
+                        </div>
+
+                        <div class="one-third column" style="margin-top: 10%">
+                            <h2>Africa</h2>
+                            <h5>
+                                Companies: <span id="toAfrica">0</span><br /> Cost: <span id="toAfricaCost">1000</span>M
+                                <br /> Revenue: <span id="toAfricaRevenue">0</span>M
+                            </h5>
+
+                            <button onClick="expandAfrica()">Take Over</button>
+                        </div>
+
+                        <div class="one-third column" style="margin-top: 10%">
+                            <h2>Asia Pacific</h2>
+                            <h5>
+                                Companies: <span id="toAsia">0</span><br /> Cost: <span id="toAsiaCost">100000</span>M
+                                <br /> Revenue: <span id="toAsiaRevenue">0</span>M
+                            </h5>
+
+                            <button onClick="expandAsia()">Take Over</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab">
+                    <input type="radio" id="tab-4" name="tab-group-1">
+                    <label for="tab-4">Western Hemisphere</label>
+
+                    <div class="content">
+                        <div class="one-third column" style="margin-top: 10%">
+                            <h2>Europe</h2>
+                            <h5>
+                                Companies: <span id="toEurope">0</span><br /> Cost: <span id="toEuropeCost">10000000</span>M
+                                <br /> Revenue: <span id="toEuropeRevenue">0</span>M
+                            </h5>
+
+                            <button onClick="expandEurope()">Take Over</button>
+                        </div>
+
+                        <div class="one-third column" style="margin-top: 10%">
+                            <h2>Americas</h2>
+                            <h5>
+                                Companies: <span id="toAmericas">0</span><br /> Cost: <span id="toAmericasCost">1000000000</span>M
+                                <br /> Revenue: <span id="toAmericasRevenue">0</span>M
+                            </h5>
+
+                            <button onClick="expandAmericas()">Take Over</button>
+                        </div>
+
+                        <div class="one-third column" style="margin-top: 10%">
+                            <h2>Atlantis</h2>
+                            <h5>
+                                Companies: <span id="toAtlantis">0</span><br /> Cost: <span id="toAtlantisCost">100000000000</span>M
+                                <br /> Revenue: <span id="toAtlantisRevenue">0</span>M
+                            </h5>
+
+                            <button onClick="expandAtlantis()">Take Over</button>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/accounting.js/0.4.1/accounting.js"></script>
+
+    <script type="application/javascript">
+        accounting.settings = {
+            currency: {
+                symbol: "&euro;", // default currency symbol is '$'
+                format: "%s%v", // controls output: %s = symbol, %v = value/number (can be object: see below)
+                decimal: ".", // decimal point separator
+                thousand: ",", // thousands separator
+                precision: 2 // decimal places
+            },
+            number: {
+                precision: 0, // default precision on numbers is 0
+                thousand: ",",
+                decimal: "."
+            }
+        }
+
+    </script>
+
+    <!-- Plotly.js -->
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <!-- Numeric JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+    <!-- Main -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
