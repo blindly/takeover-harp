@@ -1,7 +1,7 @@
 /* 60 seconds */
 window.setInterval(function () {
 
-    //console.log("I save now");
+    console.log("I save now");
 
     FIND('notifications', function(component) {
         component.append('fa-lightbulb-o', 'Saving your progress.');
