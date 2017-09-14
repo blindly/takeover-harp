@@ -1,3 +1,4 @@
+/* 60 seconds */
 window.setInterval(function () {
 
     //console.log("I save now");
@@ -19,6 +20,8 @@ window.setInterval(function () {
     localStorage.setItem("save", JSON.stringify(save));
 }, 60000);
 
+
+/* 5 seconds */
 window.setInterval(function () {
 
     revenueCalculation();
